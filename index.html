@@ -13,33 +13,34 @@
 </head>
 
 <body>
+
     <main>
-        <img src="./img/bag.png" alt="sacola de Compras">
-        <form action="">
-            <input type="text" placeholder="Digite o item que deseja adicionar" name="" id="">
-            <button type="button">Salvar item</button>
+        <img src="./img/bag.png" alt="sacola de compras">
+        <form>
+            <input class="input-item" id="input-item" type="text"
+                placeholder="Digite o item que deseja adicionar"></input>
+            <button class="button-item" id="adicionar-item">Salvar item</button>
         </form>
-        
 
-        <ul>
-            <h2>Lista de Compras</h2>
+        <div class="container-lista">
+            <h2>Lista de compras</h2>
             <hr>
-            <li>
-                <div> 
-                    <div>
-                        <input type="checkbox">
-                        <p>Ração de Gato</p>
-                    </div>
-                    <div>
-                        <button><img src="./img/delete.svg" alt="Deletar"></button>
-                        <button><img src="./img/edit.svg" alt="Editar"></button>
-                    </div>
-                </div>
-                <p>Segunda-feira (31/10/2022) ás 8:30</p>
-            </li>
-        </ul>
 
+            <ul id="lista-de-compras">
+                <p id="mensagem-lista-vazia" style="display: block">Sua lista está vazia. Adicione itens a ela para não
+                    esquecer nada na próxima compra!</p>
+            </ul>
+
+            <div id="container-lista-comprados">
+                <h2>Comprado</h2>
+                <hr />
+                <ul id="lista-comprados">
+
+                </ul>
+            </div>
+        </div>
     </main>
+    <script src="scripts.js" type="module"></script>
 </body>
 
 </html>
